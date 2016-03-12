@@ -20,4 +20,6 @@ func main() {
 		err = http.ListenAndServe(":8080", nil)
 		fmt.Printf("%v\n", err)
 	}
+
+	fmt.Printf("Failed to bind. %v\n", err)
 }
