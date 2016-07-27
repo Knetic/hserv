@@ -6,6 +6,7 @@ export GOBIN=$(CURDIR)/.temp/
 
 init: clean
 	go get ./...
+	@mkdir -p ./.output
 
 build: init
 	go build -o ./.output/hserv .
