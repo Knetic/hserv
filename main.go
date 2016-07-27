@@ -3,12 +3,16 @@ package main
 import (
 	"fmt"
 	"net/http"
+	"os"
 	"strings"
 )
 
 func main() {
 
 	var err error
+
+	// we can only ever exit in failure. User has to SIGTERM or SIGKILL to stop a successful instance.
+	defer os.Exit(1)
 
 	http.Handle("/", http.FileServer(http.Dir("./")))
 
