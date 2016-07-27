@@ -1,6 +1,8 @@
 hserv
 ====
 
+[![Build Status](https://travis-ci.org/Knetic/hserv.svg?branch=master)](https://travis-ci.org/Knetic/hserv)
+
 Stupidly simple HTTP serving of local files within a working directory.
 
 What does it do?
